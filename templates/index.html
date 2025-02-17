@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PleaseWhisperMe - Anonymous Messenger</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>PleaseWhisperMe</h1>
+        <p>Send anonymous messages. No sign-up. No tracking.</p>
+        <form action="/send" method="POST">
+            <textarea name="message" placeholder="Type your message..." required></textarea>
+            <button type="submit">Send Anonymously</button>
+        </form>
+    </div>
+</body>
+</html>

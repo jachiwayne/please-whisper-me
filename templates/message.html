@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Message Received</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Your Secret Message Link</h1>
+        <div class="message-box">
+            <p>{{ message }}</p>
+            <p class="warning">This message will self-destruct after being viewed once.</p>
+        </div>
+    </div>
+</body>
+</html>
